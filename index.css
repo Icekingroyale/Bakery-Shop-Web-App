@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: white;
+    background-color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.header{
+    display: flex;
+    background-color: rgb(243, 58, 58);
+    height: 100px;
+}
+
+
+.navbar{
+    margin-left: 60%; 
+}
+
+.mainbox{
+    border: 2px solid yellow;
+    width: 50%;
+    margin: 100px auto;
+    
+}
+
+
+
+
+h1{
+    font-style: italic;
+}
+
+img {
+    width: 100px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    margin: auto;
+    place-items: center;
+    width: 70%;
+    
+    div{
+        border: 2px solid green;
+        background-color: blue;
+        font-size: large;
+        
+    }
+  }
+
+.orderbutton{
+    display:inline;
+    margin-left: 15px;
+    border: none;
+    width: 35px;
+    cursor: pointer;
+    background-color: rgb(243, 58, 58);
+    color: white;
+    border-radius: 5px;
+}
+
+
+#reviews{
+    margin: 100px auto;
+    width: 50%;
+}
+
+
+.about{
+    margin: 100px auto;
+    width: 50%;    
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    height: 30px;
+    margin-top: 30px;
+}
+
+a{
+    margin: 10px;
+    margin-top: 10px;
+}
