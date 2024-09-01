@@ -7,34 +7,84 @@
 
 body{
     color: white;
-    background-color: black;
-    font-size: 1.3rem;
-    font-weight: 500;
+    background-image:linear-gradient(to right, orange, black,rgb(233, 225, 225));
+    font-size: 1.2rem;
 }
+
+a{
+    text-decoration: none;
+}
+
+
 
 .header{
     display: flex;
     background-color: rgb(243, 58, 58);
-    height: 100px;
+    color: black;
+    
+    img{
+        border-radius: 50%;
+        
+    }
+    
+    .intro{
+        /* color: black; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 40px;
+        margin-left: 10px;
+        
+        h6{
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight:bold;
+        }
+        
+    }
 }
 
 
 .navbar{
-    margin-left: 60%; 
+    display: inline;
+    margin-left: auto;
+    margin-top: 40px;
+    /* border: 2px solid green; */
+    height: 30px;
+    
+    
+    a{
+        /* border: 2px solid blue; */
+        margin-left: 10px;
+        color: black;
+        transition: color 0.5s;
+    }
+    
+    a:hover{
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+
+    }
 }
 
 .mainbox{
-    border: 2px solid yellow;
+    display: flex;
+    /* border: 2px solid yellow; */
     width: 50%;
     margin: 100px auto;
-    
+    gap: 20px;
 }
 
+#logo1{
+    width: 200px;
+    border-radius: 100%;
+    /* border: 2px solid green;     */
+}
 
 
 
 h1{
     font-style: italic;
+    
 }
 
 img {
@@ -58,9 +108,21 @@ h2 {
     width: 70%;
     
     div{
-        border: 2px solid green;
-        background-color: blue;
+        /* border: 2px solid green; */
+        /* background-color: blue; */
         font-size: large;
+        img{
+            width: 150px;
+            height: auto;
+            border-radius: 30px;
+            border: 1px solid black;
+            transition: 1ms;
+        }
+
+        img:hover{
+            border: 3px solid black;
+            cursor: pointer;
+        }
         
     }
   }
@@ -91,6 +153,12 @@ h2 {
 .end{
     display: flex;
     justify-content: space-between;
+
+    a{
+        margin: 10px;
+        margin-top: 10px;
+        color: white;
+    }
 }
 
 .contact{
@@ -98,7 +166,28 @@ h2 {
     margin-top: 30px;
 }
 
-a{
-    margin: 10px;
-    margin-top: 10px;
+
+
+@media screen and (max-width: 390px){
+    .mainbox{
+        display: block;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        
+    }
+
+
+
+
+    .header{
+        background-color: green;
+    }
+
+    .navbar{
+        margin-left: auto;
+    }
 }
